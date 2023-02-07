@@ -19,9 +19,9 @@ abstract class Model
     private static function getPDO(): object
     {
         if (self::$pdo === null) {
-            $db_name = 'mysql:host=mysql-adrienf.alwaysdata.net;dbname=adrienf_simple_comme_miam';
-            $user = 'adrienf';
-            $password = 'mmdppbdd3$PV?';
+            $db_name = "";
+            $user = "";
+            $password = "";
             $options = [
                 PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
